@@ -25,3 +25,9 @@ variable "config_path" {
   default     = "~/.kube/config"
   description = "The path to the kubeconfig file"
 }
+
+variable "secret_name" {
+  type        = string
+  default     = "sops-gpg"
+  description = "The default name of sops secret for Flux"
+}
