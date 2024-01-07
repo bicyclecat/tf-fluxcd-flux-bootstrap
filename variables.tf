@@ -31,3 +31,9 @@ variable "secret_name" {
   default     = "sops-gpg"
   description = "The default name of sops secret for Flux"
 }
+
+variable "flux_system_namespace" {
+  type        = string
+  default     = "flux-system"
+  description = "Flux system namespace. Added as modules dependency workaround"
+}
